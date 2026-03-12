@@ -2,7 +2,9 @@
 
 A **fully local Retrieval-Augmented Generation (RAG) document assistant** that answers questions from PDF documents using **vector search, reranking, and a local language model**.
 
-This project demonstrates both **production-level AI system engineering** and **research-style evaluation**, showing how modern RAG pipelines can be built, optimized, and measured.
+This project demonstrates both **production-style AI system engineering** and **research-style evaluation**, showing how modern RAG pipelines can be built, optimized, and experimentally analyzed.
+
+Demo: Run locally with Streamlit to interactively query PDF documents.
 
 ---
 
@@ -14,13 +16,55 @@ This project demonstrates both **production-level AI system engineering** and **
 
 ---
 
+# Quick Start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/rutujad9/local-rag-document-assistant.git
+cd local-rag-document-assistant
+```
+
+Create a virtual environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+---
+
+# Run the Application
+
+Start the Streamlit interface:
+
+```bash
+python3 -m streamlit run app.py
+```
+
+The browser interface allows you to:
+
+- Upload PDF documents
+- Ask questions about documents
+- View answer sources and document pages
+
+---
+
 # Overview
 
-This project implements a **local AI document assistant** capable of answering questions from uploaded PDFs.
+Large Language Models can generate answers but often lack access to external knowledge.
 
-The system uses **vector embeddings, semantic search, reranking, and a local LLM** to produce grounded answers with source citations.
+This project implements a **Retrieval-Augmented Generation (RAG) pipeline** that retrieves relevant information from PDF documents and uses it to generate grounded answers.
 
-Unlike typical RAG demos, this repository also includes **evaluation scripts and performance benchmarking** to analyze system quality and optimization impact.
+The system combines **vector embeddings, semantic search, reranking, and a local LLM** to provide accurate responses with **source citations**.
+
+In addition to the application itself, the repository includes **evaluation scripts and benchmarking experiments** to analyze retrieval accuracy, reranking effectiveness, and latency improvements through caching.
 
 ---
 
@@ -81,31 +125,14 @@ flowchart LR
 
 # Key Features
 
-## Production-Grade AI System
-
-- Fully **local AI pipeline**
-- **Ollama + Llama3.2** local LLM
-- PDF ingestion and semantic search
+- Fully **local AI pipeline** (no external APIs required)
+- **Semantic vector search** using ChromaDB
+- **CrossEncoder reranking** for improved retrieval relevance
 - Interactive **Streamlit chat interface**
 - Dynamic **PDF upload and indexing**
-- **Source citations** for answers
 - **Duplicate document** protection
-- Versioned vector databases
-
----
-
-## Research-Style Evaluation
-
-The project includes experiments to analyze RAG system performance.
-
-Evaluation scripts measure:
-
-- Retrieval accuracy
-- Reranking effectiveness
-- Query latency
-- Caching performance improvements
-
-All experiments are located in the `evaluation/` directory.
+- **Source citations with document pages** for answers
+- **Evaluation benchmarks** for system performance
 
 ---
 
@@ -237,46 +264,6 @@ local-rag-document-assistant
 ## Application Layer
 
 - Streamlit
-
----
-
-# Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/rutujad9/local-rag-document-assistant.git
-cd local-rag-document-assistant
-```
-
-Create a virtual environment:
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-python3 -m pip install -r requirements.txt
-```
-
----
-
-# Run the Application
-
-Start the Streamlit interface:
-
-```bash
-python3 -m streamlit run app.py
-```
-
-The browser interface allows you to:
-
-- Upload PDF documents
-- Ask questions about documents
-- View answer sources and document pages
 
 ---
 
