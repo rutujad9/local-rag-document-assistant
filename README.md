@@ -8,7 +8,6 @@ This project demonstrates both **production-level AI system engineering** and **
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![RAG](https://img.shields.io/badge/AI-RAG-green)
-![LangChain](https://img.shields.io/badge/LangChain-RAG-green)
 ![Ollama](https://img.shields.io/badge/LLM-Ollama-orange)
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
@@ -85,12 +84,12 @@ flowchart LR
 ## Production-Grade AI System
 
 - Fully **local AI pipeline**
-- **Ollama + Llama3** local LLM
+- **Ollama + Llama3.2** local LLM
 - PDF ingestion and semantic search
 - Interactive **Streamlit chat interface**
 - Dynamic **PDF upload and indexing**
-- Source citations for answers
-- Duplicate document protection
+- **Source citations** for answers
+- **Duplicate document** protection
 - Versioned vector databases
 
 ---
@@ -233,7 +232,7 @@ local-rag-document-assistant
 ## Local LLM
 
 - Ollama
-- Llama3
+- Llama3.2
 
 ## Application Layer
 
