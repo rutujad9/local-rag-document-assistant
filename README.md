@@ -125,7 +125,7 @@ Caching significantly improves query speed:
 
 Average retrieval time without cache: **0.054 s**  
 Average retrieval time with cache: **0.007 s**  
-Latency improvement: **~86%**
+Latency improvement: **~86.29%**
 
 ---
 
