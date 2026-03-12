@@ -335,7 +335,7 @@ Possible extensions include:
 
 # Author
 
-**Rutuja Deshmukh**  
+**Rutuja D**  
 MSc Informatik — Germany
 
 ---
