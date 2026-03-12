@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What is retrieval augmented generation?",
+    "expected_source": "data/rag.pdf"
+  },
+  {
+    "question": "What is the transformer architecture?",
+    "expected_source": "data/transformers.pdf"
+  },
+  {
+    "question": "What are sentence embeddings?",
+    "expected_source": "data/sentence-transformers.pdf"
+  },
+  {
+    "question": "What is self-attention in the transformer model?",
+    "expected_source": "data/transformers.pdf"
+  },
+  {
+    "question": "How does the paper describe sentence embeddings?",
+    "expected_source": "data/sentence-transformers.pdf"
+  },
+  {
+    "question": "What does RAG combine for language generation?",
+    "expected_source": "data/rag.pdf"
+  }
+]
